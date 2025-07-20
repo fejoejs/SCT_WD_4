@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ultimate To-Do</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/4b90ff1c65.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="bg-animation"></div>
+
+  <div class="container glass">
+    <div class="header">
+      <h1 class="title">🚀 Ultimate To-Do</h1>
+      <button id="theme-toggle" title="Toggle Theme">
+        <i class="fas fa-moon"></i>
+      </button>
+    </div>
+
+    <form id="task-form">
+      <input type="text" id="task-title" placeholder="Enter task..." required>
+      <input type="date" id="task-date" required>
+      <input type="time" id="task-time" required>
+      <button type="submit" title="Add Task">
+        <i class="fas fa-plus"></i> Add
+      </button>
+    </form>
+
+    <div class="controls">
+      <input type="text" id="search" placeholder="Search tasks...">
+      <select id="filter" title="Filter Tasks">
+        <option value="all">All</option>
+        <option value="today">Today</option>
+        <option value="completed">Completed</option>
+      </select>
+      <button id="clear-all" class="clear-btn" title="Clear All">
+        🗑️ Clear All
+      </button>
+    </div>
+
+    <ul id="task-list"></ul>
+  </div>
+
+  <footer class="footer">
+    © 2025 Ultimate To-Do App | Built with ❤️ by Fejoe
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
